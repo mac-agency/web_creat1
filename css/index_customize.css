@@ -587,6 +587,17 @@ vertical-align:bottom;
   margin-left: 50px;
 }
 
+.footer_list1 {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.jyouge_padding10 {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 
 
 @media (max-width:320px){

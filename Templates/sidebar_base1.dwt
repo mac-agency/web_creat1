@@ -167,7 +167,7 @@ window.addEventListener('load', function() {
     </section><!-- TemplateEndEditable -->
     <hr>
     <div class="container">
-      <div class="row">
+      <div class="row row-eq-height">
         <!-- TemplateBeginEditable name="second_content" --><div class="col-lg-8 col-12">
           <div class="row row-eq-height">
             <div class="col-sm-6 col-12">
@@ -228,29 +228,12 @@ window.addEventListener('load', function() {
               <a href="#" class="btn btn-block btn-info text-white top_margin10">よくあるご質問</a>
               <a href="#" class="btn btn-block btn-info text-white top_margin10">プライバシーポリシー</a>
               <a href="#" class="btn btn-block btn-info text-white top_margin10">ご利用規約</a>
-              <a href="#" class="btn btn-block btn-info text-white top_margin10">運営会社</a>
+              <a href="#" class="btn btn-block btn-info text-white top_margin10 bottom_margin10">運営会社</a>
               
               
               
             </div>
-            <div class="col-12">
-              <h3 class="text-center">Agents</h3>
-              <hr>
-              <div class="media">
-                <img class="mr-3" src="../images/64X64.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0">John Doe</h5>
-                  <abbr title="Phone">P:</abbr> (123) 456-7890 <a href="mailto:#">first.last@example.com</a>
-                </div>
-              </div>
-              <div class="media mt-2">
-                <img class="mr-3" src="../images/64X64.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0">Linda Smith</h5>
-                  <abbr title="Phone">P:</abbr> (123) 456-7890 <a href="mailto:#">first.last@example.com</a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
