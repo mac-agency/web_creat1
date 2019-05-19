@@ -24,7 +24,23 @@
 <!-- TemplateEndEditable -->
 <script src="../js/simplescrollup.js"></script>
 <script src="../js/retina.js"></script>
-    
+    <!--ライトボックス定番３行-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+     <!--シンプリースクロール-->
+<link href="../css/simple_scroll.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.simplyscroll.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.simplyscroll.js"></script>
+<script>
+  (function($) {
+$(function() {
+$("#scroller").simplyScroll();
+});
+})(jQuery);
+  </script>
+   <!--ここまでシンプリースクロール-->
     <script>
 window.addEventListener('load', function() {
       document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
@@ -38,7 +54,7 @@ window.addEventListener('load', function() {
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand left_padding0" href="#"><img src="../images/seisaku_logo_white.svg" class="logo_width img-fluid" alt="会社ロゴ"></a>
+      <a class="navbar-brand left_padding0" href="#"><img src="../images/niko_logo_white2.svg" class="logo_width img-fluid" alt="会社ロゴ"></a>
       <div class="contact_icon_wrap float-right">
       <a href="tel:09072894281"><img src="../images/tel1.svg" class="img-fluid tel_width pc_non" alt="電話"></a>
           <a href="../contact/index.html"><img src="../images/mail.svg" class="img-fluid tel_width pc_non" alt="メール"></a>
@@ -52,7 +68,7 @@ window.addEventListener('load', function() {
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">お気軽webについて</a>
+            <a class="nav-link" href="#">お手軽webについて</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">料金など</a>
@@ -240,69 +256,86 @@ window.addEventListener('load', function() {
     </div>
     <hr>
     <!-- TemplateBeginEditable name="third_cotent" --><section>
+    <section id="scroll" class="section_padding">
+  <div class="container-fluid">
+    <ul id="scroller">
+<li><a href="#"><img src="../images/otegaru_bn1.jpg" class="retina img-fluid" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+<li><a href="#"><img src="../images/otegaru_bn3.jpg" class="img-fluid retina" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+<li><a href="#"><img src="../images/otegaru_bn2.jpg" class="img-fluid retina" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+<li><a href="#"><img src="../images/otegaru_bn4.jpg" class="img-fluid retina" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+<li><a href="#"><img src="../images/otegaru_bn1.jpg" class="img-fluid retina" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+<li><a href="#"><img src="../images/otegaru_bn3.jpg" class="img-fluid retina" alt="ホームページ制作お手軽プラン" title="ホームページ制作お手軽プラン"></a></li>
+
+</ul> 
+    </div>
+  </section>
+    
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12">
-            <h3>New Properties</h3>
+            <h3>Photo Shot</h3>
             <hr>
             <div class="row">
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"> </div>
+                <div class="text-center">  <a href="../images/news1@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news1.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news2@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news2.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news3@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news3.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
             </div>
             <hr>
             <div class="row">
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news4@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news4.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news1@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news1.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news2@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news2.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
             </div>
             <hr>
             <div class="row">
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news3@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news3.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news4@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news4.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
               <div class="col-4">
-                <div class="text-center"> <img src="../images/72X72.gif" alt="Thumbnail Image 1"></div>
+                <div class="text-center">  <a href="../images/news1@2x.jpg" data-lightbox="work" data-title="お仕事"><img src="../images/news1.jpg" alt="お仕事" class="retina img-fluid"></a> </div>
               </div>
             </div>
             <hr>
           </div>
           <div class="col-md-6 col-12">
-            <h3>Our Services</h3>
+            <h3>広がるニコニコwebのプラン</h3>
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Panel 1</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Panel 2</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Panel 3</a>
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">お手軽制作プラン 1</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">うれしい制作プラン</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">微笑み制作プラン</a>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class="text-center mt-2"><img src="../images/3b536b.gif" alt=""></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                <p class="text-center mt-2"><img src="../images/otegaru_plan_ph.jpg" alt="お手軽ホームページ制作プラン" class="retina"></p>
+                <p>お手軽ホームページ制作プランは2万円という低価格でホームページを制作できるとても魅力的なプランです。シングルページ（１ページ）に発信する情報を集約させるタイプで、これから起業される企業様やこれから出店される店舗様、あるいは個人事業主様には最適です。<br>
+また、他ではオプション：別料金扱いのお問い合わせフォームは標準装備でご提供させていただいています。</p>
               </div>
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <p class="text-center mt-2"><img src="../images/3b536b.gif" alt=""></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                <p class="text-center mt-2"><img src="../images/ureshii_plan_ph.jpg" alt="うれしいホームページ制作プラン" class="retina"></p>
+                <p>うれしいホームページ制作プランは下層ページを含んだ全５ページ構成で製作する、起業間もない法人様や店舗様などに最適なプランです。<br>
+もちろんお問い合わせフォームを装備して、商品やサービスとPRするフォトギャラリーも装備可能です。アピールしたい項目に力を入れてみてはいかがですか。</p>
               </div>
               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <p class="text-center mt-2"><img src="../images/3b536b.gif" alt=""></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                <p class="text-center mt-2"><img src="../images/hohoemi_plan_ph.jpg" alt="微笑みホームページ制作プラン"></p>
+                <p>微笑みホームページ制作プランは下層ページを含んだ10ページ構成で、中規模の企業様や支店・営業所や工場をお持ちの企業様におすすめです。<br>
+企業情報や採用情報など多くのコンテンツを発信していきます。</p>
               </div>
             </div>
           </div>
@@ -321,14 +354,16 @@ window.addEventListener('load', function() {
               
             </div>
             <div class="col-lg-6 col-12">
-              <h3 class="h5">お手軽webプラン</h3>
+              <h3 class="h5">ホームページ制作プラン</h3>
               <hr>
               <div>
             <div class="media">
               <div class="media-body">
                 
                 <ul class="footer_list1">
-                  <li><a href="#">お気軽webプランについて</a></li>
+                  <li><a href="#">お気軽ホームページ制作プランについて</a></li>
+                  <li><a href="#">うれしいホームページ制作プラン</a></li>
+                  <li><a href="#">微笑みホームページ制作プランについて</a></li>
                   <li><a href="#">料金</a></li>
                   <li><a href="#">ご用意いただきたいもの</a></li>
                   <li><a href="#">よくあるご質問</a></li>

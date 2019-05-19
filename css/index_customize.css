@@ -591,11 +591,16 @@ vertical-align:bottom;
   list-style: none;
   text-decoration: none;
   padding-left: 10px;
+  font-size: 14px;
 }
 
 .jyouge_padding10 {
   padding-top: 10px;
   padding-bottom: 0px;
+}
+
+#scroller {
+  width: 100%;
 }
 
 
