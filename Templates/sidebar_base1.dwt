@@ -316,25 +316,25 @@ window.addEventListener('load', function() {
             <h3>広がるニコニコwebのプラン</h3>
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">お手軽制作プラン 1</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">うれしい制作プラン</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">微笑み制作プラン</a>
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">ニコニコ制作プラン 1</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ワクワク制作プラン</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">ドキドキ制作プラン</a>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <p class="text-center mt-2"><img src="../images/otegaru_plan_ph.jpg" alt="お手軽ホームページ制作プラン" class="retina"></p>
-                <p>お手軽ホームページ制作プランは2万円という低価格でホームページを制作できるとても魅力的なプランです。シングルページ（１ページ）に発信する情報を集約させるタイプで、これから起業される企業様やこれから出店される店舗様、あるいは個人事業主様には最適です。<br>
+                <p>ニコニコホームページ制作プランは2万円という低価格でホームページを制作できるとても魅力的なプランです。シングルページ（１ページ）に発信する情報を集約させるタイプで、これから起業される企業様やこれから出店される店舗様、あるいは個人事業主様には最適です。<br>
 また、他ではオプション：別料金扱いのお問い合わせフォームは標準装備でご提供させていただいています。</p>
               </div>
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <p class="text-center mt-2"><img src="../images/ureshii_plan_ph.jpg" alt="うれしいホームページ制作プラン" class="retina"></p>
-                <p>うれしいホームページ制作プランは下層ページを含んだ全５ページ構成で製作する、起業間もない法人様や店舗様などに最適なプランです。<br>
+                <p>ワクワクホームページ制作プランは下層ページを含んだ全５ページ構成で製作する、起業間もない法人様や店舗様などに最適なプランです。<br>
 もちろんお問い合わせフォームを装備して、商品やサービスとPRするフォトギャラリーも装備可能です。アピールしたい項目に力を入れてみてはいかがですか。</p>
               </div>
               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <p class="text-center mt-2"><img src="../images/hohoemi_plan_ph.jpg" alt="微笑みホームページ制作プラン"></p>
-                <p>微笑みホームページ制作プランは下層ページを含んだ10ページ構成で、中規模の企業様や支店・営業所や工場をお持ちの企業様におすすめです。<br>
+                <p>ドキドキホームページ制作プランは下層ページを含んだ10ページ構成で、中規模の企業様や支店・営業所や工場をお持ちの企業様におすすめです。<br>
 企業情報や採用情報など多くのコンテンツを発信していきます。</p>
               </div>
             </div>
@@ -350,7 +350,7 @@ window.addEventListener('load', function() {
             <div class="col-lg-6 col-12">
               <h3 class="h5">お手軽がいい</h3>
               <hr>
-              <p class="kaisetu_read">お手軽webプランは、その名の通り制作費が2万円ととてもお手軽価格で、シングルページ（１ページ）集約型だから原稿を考えるお客様にもご負担の少ないお手軽なプランとなっています。</p>
+              <p class="kaisetu_read">ニコニコホームページ制作プランは、その名の通り制作費が2万円ととてもお手軽価格で、シングルページ（１ページ）集約型だから原稿を考えるお客様にもご負担の少ないお手軽なプランとなっています。</p>
               
             </div>
             <div class="col-lg-6 col-12">
@@ -361,9 +361,10 @@ window.addEventListener('load', function() {
               <div class="media-body">
                 
                 <ul class="footer_list1">
-                  <li><a href="#">お気軽ホームページ制作プランについて</a></li>
-                  <li><a href="#">うれしいホームページ制作プラン</a></li>
-                  <li><a href="#">微笑みホームページ制作プランについて</a></li>
+                  <li><a href="#">ニコニコホームページ制作プランについて</a></li>
+                  <li><a href="#">ワクワクホームページ制作プラン</a></li>
+                  <li><a href="#">ドキドキホームページ制作プランについて</a></li>
+                  <li><a href="#">ブログホームページ制作プランについて</a></li>
                   <li><a href="#">料金</a></li>
                   <li><a href="#">ご用意いただきたいもの</a></li>
                   <li><a href="#">よくあるご質問</a></li>
