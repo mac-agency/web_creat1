@@ -622,6 +622,34 @@ vertical-align:bottom;
   text-shadow: 2px 2px 2px rgba(255,255,255,1.00);
 }
 
+.jumbotron.operation_niko {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../operation_company/images/opration_company_top1.jpg);
+}
+
+.jumbotron.plans_niko {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../plans/images/plans_top1.jpg);
+}
+
+.jumbotron.jyunbi_niko {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../preparation/images/preparation_top1.jpg);
+}
+
+.jumbotron.price_niko {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../price/images/price_top1.jpg);
+}
+
 
 
 @media (max-width:320px){
