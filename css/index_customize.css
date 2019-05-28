@@ -650,6 +650,13 @@ vertical-align:bottom;
   background-image: url(../price/images/price_top1.jpg);
 }
 
+.jumbotron.kiyaku_niko {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../riyou_kiyaku/images/kiyaku_top.jpg);
+}
+
 
 
 @media (max-width:320px){
