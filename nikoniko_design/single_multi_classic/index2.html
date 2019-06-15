@@ -23,14 +23,35 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/index_customize.css" rel="stylesheet" type="text/css">
+    <link href="css/page_to_top_base.css" rel="stylesheet" type="text/css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
+  <script type="text/javascript" src="js/retina.js"></script>
+  <!--トップへ戻る-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  
+<script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
+<p class="pagetop"><a href="#wrap">▲</a></p>
 <body class="site2" data-spy="scroll" data-target=".mainmenu-area">
     <!--Preloader-->
     <div class="preloader">
@@ -60,7 +81,7 @@
                         <a class="navbar-brand" href="#home-area"><img src="images/logo.png" alt=""></a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="mainmenu">
-                        <ul class="nav navbar-nav navbar-right help-menu">
+                        <!--<ul class="nav navbar-nav navbar-right help-menu">
                             <li><a href=""><i class="icofont icofont-user-alt-4"></i></a></li>
                             <li><a href="#search-box" data-toggle="collapse"><i class="icofont icofont-search-alt-2"></i></a></li>
                             <li class="select-cuntry">
@@ -72,15 +93,15 @@
                                     <option value="CHV">CHV</option>
                                 </select>
                             </li>
-                        </ul>
+                        </ul>-->
                         <ul class="nav navbar-nav primary-menu">
                             <li class="active"><a href="#home-area">Home</a></li>
-                            <li><a href="#service-area">Services</a></li>
-                            <li><a href="#portfolio-area">Portfolio</a></li>
-                            <li><a href="#team-area">Team</a></li>
-                            <li><a href="#price-area">Price</a></li>
-                            <li><a href="#blog-area">Blog</a></li>
-                            <li><a href="#contact-area">Contact</a></li>
+                            <li><a href="#about-area">当社について</a></li>
+                            <li><a href="#portfolio-area">サービス</a></li>
+                            <li><a href="#team-area">拠点</a></li>
+                            <!--<li><a href="#price-area">Price</a></li>-->
+                            <li><a href="#blog-area">お知らせ</a></li>
+                            <li><a href="#contact-area">お問合せ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,11 +118,9 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
                         <div class="header-text">
-                            <div class="wow fadeInUp upper latter-space" data-wow-delay="0.2s">WE PROVIDE BEST BUSINESS SOLUTION</div>
-                            <h2 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">Classic <span class="dot"></span></h2>
-                            <div class="wow fadeInUp" data-wow-delay="0.7s">
-                                <a href="#" class="bttn bttn-lg bttn-primary">Contact Now</a>
-                            </div>
+                            <div class="wow fadeInUp upper latter-space" data-wow-delay="0.2s">創業15年の感謝を込めて新たなスタート</div>
+                            <h2 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">日本の流通を支える</h2>
+                            
                         </div>
                     </div>
                 </div>
@@ -120,23 +139,23 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-5">
                     <div class="page-title">
-                        <h2 class="title wow fadeInUp">The Most Incredible &amp; More Effective Business Start Up Solution</h2>
+                        <h2 class="title wow fadeInUp">流通ソリューションをご提案しています。</h2>
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
                             <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,</p>
                         </div>
                     </div>
-                    <div class="wow fadeInUp" data-wow-delay="0.7s">
+                    <!--<div class="wow fadeInUp" data-wow-delay="0.7s">
                         <a href="#" class="bttn bttn-primary">Learn More</a>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="hidden-xs col-sm-6 col-md-offset-1">
                     <div class="page-title">
-                        <h2>Free Quently Asked Question</h2>
+                        <h2>多く寄せられるご質問</h2>
                     </div>
                     <div class="panel-group accordion1" id="accordion">
                         <div class="panel">
-                            <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#collapse1">How to improved my designing skill?</a>
+                            <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#collapse1">要望を聞いていただいて、見積もりも含めて具体的な提案してもらえますか？</a>
                             <div id="collapse1" class="collapse in ">
                                 <div class="text-body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,</div>
                             </div>
@@ -167,8 +186,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="page-title text-center">
-                        <h2 class="title">Our Best Service</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h2 class="title">私たちのサービス</h2>
+                        <p>企業様の流通を支えるサービスをご提供しています。</p>
                     </div>
                 </div>
             </div>
@@ -176,56 +195,56 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="service-box">
                         <div class="box-image">
-                            <img src="images/service-1.jpg" alt="">
-                            <a href="#" class="box-plus">
+                            <img src="image2/service1.jpg" alt="定期運送サービス" class="retina">
+                            <!--<a href="#" class="box-plus">
                                 <i class="icofont icofont-plus"></i>
-                            </a>
+                            </a>-->
                         </div>
                         <div class="box-text">
-                            <h4>Financial Planning</h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                            <h4>定期運送サービス</h4>
+                            <p>お客様とのご契約に基づいてご提供する定期的な運送サービスです。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="service-box">
                         <div class="box-image">
-                            <img src="images/service-2.jpg" alt="">
-                            <a href="#" class="box-plus">
+                            <img src="image2/service2.jpg" alt="倉庫保管サービス" class="retina">
+                            <!--<a href="#" class="box-plus">
                                 <i class="icofont icofont-plus"></i>
-                            </a>
+                            </a>-->
                         </div>
                         <div class="box-text">
-                            <h4>Digital Marketing</h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                            <h4>倉庫保管サービス</h4>
+                            <p>配送前の保管や様々なご要望に応じた保管業務を承っています。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="service-box">
                         <div class="box-image">
-                            <img src="images/service-3.jpg" alt="">
-                            <a href="#" class="box-plus">
+                            <img src="image2/service3.jpg" alt="スポット配送サービス" class="retina">
+                            <!--<a href="#" class="box-plus">
                                 <i class="icofont icofont-plus"></i>
-                            </a>
+                            </a>-->
                         </div>
                         <div class="box-text">
-                            <h4>Market Analysis</h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                            <h4>スポット配送サービス</h4>
+                            <p>様々なお客様ニーズに対応する基本のご契約をカスタマイズできるサービスです。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="service-box">
                         <div class="box-image">
-                            <img src="images/service-4.jpg" alt="">
-                            <a href="#" class="box-plus">
+                            <img src="image2/service4.jpg" alt="出庫・配送管理" class="retina">
+                            <!--<a href="#" class="box-plus">
                                 <i class="icofont icofont-plus"></i>
-                            </a>
+                            </a>-->
                         </div>
                         <div class="box-text">
-                            <h4>Graphics Designing</h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                            <h4>出庫・配送管理</h4>
+                            <p>荷物の保管・配送状況をリアルタイムで把握していただけるサービスです。</p>
                         </div>
                     </div>
                 </div>
@@ -238,14 +257,14 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <div class="video-box">
-                        <img src="images/video-image.png" alt="">
-                        <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video-bttn"><img src="images/video-button.png" alt=""></a>
+                        <img src="image2/video_image.jpg" alt="会社をビデオで紹介" class="retina">
+                        <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video-bttn"><img src="images/video-button.png" alt="プレイボタン"></a>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 wow fadeInUp">
                     <div class="page-title">
-                        <h2 class="title">Why Choose Us?</h2>
+                        <h2 class="title">私達が選ばれる理由</h2>
                         <ul class="tabs-list-2">
                             <li class="active"><a data-toggle="pill" href="#our_mission">Our Mission</a></li>
                             <li><a data-toggle="pill" href="#our_vission">Our Vission</a></li>
@@ -254,20 +273,20 @@
                     </div>
                     <div class="tab-content">
                         <div id="our_mission" class="tab-pane fade in active">
-                            <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
-                            <h3 class="upper">EXPERIENCE IN THIS PASSION</h3>
+                            <h4 class="upper thing">創業15年の実績</h4>
+                            <h3 class="upper">日本の流通を支える</h3>
                             <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
                             <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
                             <!-- Left-aligned -->
-                            <div class="media">
+                            <!--<div class="media">
                                 <div class="media-left">
-                                    <img src="images/testimonial-2.png" class="media-object">
+                                    <img src="images/testimonial-2.png" class="media-object" alt="説明">
                                 </div>
                                 <div class="media-right media-middle">
                                     <h5 class="media-heading satisfy">John Doe</h5>
                                     <h6>ceo of Classic.</h6>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                         <div id="our_vission" class="tab-pane fade">
                             <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
@@ -275,15 +294,15 @@
                             <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
                             <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
                             <!-- Left-aligned -->
-                            <div class="media">
+                            <!--<div class="media">
                                 <div class="media-left">
-                                    <img src="images/testimonial-1.png" class="media-object">
+                                    <img src="images/testimonial-1.png" class="media-object" alt="説明">
                                 </div>
                                 <div class="media-right media-middle">
                                     <h5 class="media-heading satisfy">John Doe</h5>
                                     <h6>ceo of Classic.</h6>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                         <div id="our_support" class="tab-pane fade">
                             <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
@@ -291,15 +310,15 @@
                             <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
                             <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
                             <!-- Left-aligned -->
-                            <div class="media">
+                            <!--<div class="media">
                                 <div class="media-left">
-                                    <img src="images/testimonial-2.png" class="media-object">
+                                    <img src="images/testimonial-2.png" class="media-object" alt="説明">
                                 </div>
                                 <div class="media-right media-middle">
                                     <h5 class="media-heading satisfy">John Doe</h5>
                                     <h6>ceo of Classic.</h6>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -315,8 +334,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="page-title text-center">
-                        <h2 class="title">Portfolio Project</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h2 class="title">様々な取り組み</h2>
+                        <p>当社が取り組んでいる様々プロジェクトをご紹介しています</p>
                     </div>
                 </div>
             </div>
@@ -325,101 +344,101 @@
                     <!-- Mixitup controls -->
                     <ul class="filter-controls text-center">
                         <li class="active filter" data-filter="all">All</li>
-                        <li class="active filter" data-filter=".graphics">Graphics</li>
-                        <li class="filter" data-filter=".ux_ui">UI/UX</li>
-                        <li class="filter" data-filter=".web_design">Web Design</li>
-                        <li class="filter" data-filter=".coding">Coding</li>
-                        <li class="filter" data-filter=".developing">Developing</li>
-                        <li class="filter" data-filter=".photography">Photography</li>
+                        <li class="active filter" data-filter=".distribution">流通</li>
+                        <li class="filter" data-filter=".safty">安全</li>
+                        <li class="filter" data-filter=".efficiency">効率化</li>
+                        
+                        <li class="filter" data-filter=".shipping">運送・運輸</li>
+                        
                     </ul>
                 </div>
             </div>
             <div class="row" id="filtering">
-                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics developing">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix distribution shipping">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-1.jpg" alt="">
+                            <img src="image2/work1.jpg" alt="トラック輸送" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Print Template</h5>
-                            <a href="images/work-1.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>トラック輸送</h5>
+                            <a href="image2/work1.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui ">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix safty">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-2.jpg" alt="">
+                            <img src="image2/work2.jpg" alt="車両定期点検" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Graphics Template</h5>
-                            <a href="images/work-2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>車両定期点検</h5>
+                            <a href="image2/work2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics ">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix efficiency distribution">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-3.jpg" alt="">
+                            <img src="image2/work3.jpg" alt="仕分け作業のオートメーション" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Web Template</h5>
-                            <a href="images/work-3.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>仕分け作業のオートメーション</h5>
+                            <a href="image2/work3.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui developing">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix efficiency distribution">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-4.jpg" alt="">
+                            <img src="image2/work4.jpg" alt="荷物の電子管理" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Developing</h5>
-                            <a href="images/work-4.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>荷物の電子管理</h5>
+                            <a href="image2/work4.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design photography">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix safty">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-5.jpg" alt="">
+                            <img src="image2/work5.jpg" alt="運行管理の徹底" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Photography</h5>
-                            <a href="images/work-5.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>運行管理の徹底</h5>
+                            <a href="image2/work5.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix coding">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix efficiency distribution">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-6.jpg" alt="">
+                            <img src="image2/work6.jpg" alt="AIフォークリフトの導入" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Coding</h5>
-                            <a href="images/work-6.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>AI電気フォークリフトの導入</h5>
+                            <a href="image2/work6.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design developing">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design developing distribution">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-7.jpg" alt="">
+                            <img src="image2/work7.jpg" alt="出庫管理の徹底" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Web Desing</h5>
-                            <a href="images/work-7.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>出庫管理の徹底</h5>
+                            <a href="image2/work7.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 mix coding photography">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix shipping distribution">
                     <div class="filter-box">
                         <div class="filter-image">
-                            <img src="images/work-8.jpg" alt="">
+                            <img src="image2/work8.jpg" alt="高まる乗用車輸送" class="retina">
                         </div>
                         <div class="filter-hover">
-                            <h5>Coding</h5>
-                            <a href="images/work-8.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            <h5>高まる乗用車輸送</h5>
+                            <a href="image2/work8.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
                         </div>
                     </div>
                 </div>
@@ -435,8 +454,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="page-title text-center">
-                        <h2 class="title">Our Working Process</h2>
-                        <p>There are many variations of passages of lorem ipsum avalable</p>
+                        <h2 class="title">どうぞお気軽にご相談ください</h2>
+                        <p>流通をスマートにして企業活動を活性化しましょう</p>
                     </div>
                 </div>
             </div>
@@ -446,7 +465,7 @@
                         <div class="process-icon">
                             <i class="icofont icofont-pie"></i>
                         </div>
-                        <h3>Investigation</h3>
+                        <h3>調査・現状把握</h3>
                         <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
                     </div>
                 </div>
@@ -455,7 +474,7 @@
                         <div class="process-icon">
                             <i class="icofont icofont-users-alt-1"></i>
                         </div>
-                        <h3>Consultant</h3>
+                        <h3>コンサルテイング</h3>
                         <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
                     </div>
                 </div>
@@ -464,7 +483,7 @@
                         <div class="process-icon">
                             <i class="icofont icofont-brainstorming"></i>
                         </div>
-                        <h3>Planning</h3>
+                        <h3>計画・コンセンサス</h3>
                         <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
                     </div>
                 </div>
@@ -473,7 +492,7 @@
                         <div class="process-icon">
                             <i class="icofont icofont-settings-alt"></i>
                         </div>
-                        <h3>Working</h3>
+                        <h3>実行・実施</h3>
                         <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
                     </div>
                 </div>
@@ -486,139 +505,7 @@
 
 
 
-    <!-- Price-Area -->
-    <section class="section-padding gray-bg" id="price-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="page-title text-center">
-                        <h2 class="title">Pricing Plan</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul class="price-tabs">
-                        <li class="active"><a data-toggle="pill" href="#monthly">Monthly</a></li>
-                        <li><a data-toggle="pill" href="#yearly">Yearly</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row prices tab-content">
-                <div id="monthly" class="tab-pane fade in active">
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="price-box">
-                            <h4>Basic</h4>
-                            <h3 class="amount">&#36;10 /<span>Month</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
-                        <div class="price-box active">
-                            <h4>Premium</h4>
-                            <h3 class="amount">&#36;50 /<span>Month</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="price-box">
-                            <h4>Business</h4>
-                            <h3 class="amount">&#36;80 /<span>Month</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
-                        <div class="price-box">
-                            <h4>Ultimate</h4>
-                            <h3 class="amount">&#36;100 /<span>Month</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="yearly" class="tab-pane fade">
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="price-box">
-                            <h4>Basic</h4>
-                            <h3 class="amount">&#36;10 /<span>Year</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
-                        <div class="price-box active">
-                            <h4>Premium</h4>
-                            <h3 class="amount">&#36;50 /<span>Year</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="price-box">
-                            <h4>Business</h4>
-                            <h3 class="amount">&#36;80 /<span>Year</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
-                        <div class="price-box">
-                            <h4>Ultimate</h4>
-                            <h3 class="amount">&#36;100 /<span>Year</span></h3>
-                            <ul class="price-list">
-                                <li>Free Useable</li>
-                                <li>Easily can useable 10GB</li>
-                                <li>Free Secuirity Service</li>
-                                <li>Dedicated Useable Account</li>
-                            </ul>
-                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Price-Area -->
-
+    
 
 
 
@@ -630,8 +517,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="text-center">
-                        <h2 class="title">Our expert team</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h2 class="title">拠点のご紹介</h2>
+                        <p>当社の流通拠点をご紹介します</p>
                     </div>
                 </div>
             </div>
@@ -639,76 +526,76 @@
                 <div class="col-xs-6 col-sm-4 col-md-3">
                     <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-image">
-                            <img src="images/team-5.png" alt="">
+                            <img src="image2/branch1.jpg" alt="">
                         </div>
                         <div class="team-hover text-center">
-                            <h5 class="t_title">Roberto Peo</h5>
+                            <h5 class="t_title">本社流通センター</h5>
                             <span class="t_sub_title">SEO Expert</span>
                             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
                             <br />
-                            <div class="team-social-menu">
+                            <!--<div class="team-social-menu">
                                 <a href="#"><i class="icofont icofont-social-facebook"></i></a>
                                 <a href="#"><i class="icofont icofont-social-twitter"></i></a>
                                 <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
                                 <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3">
                     <div class="team-box two wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-image">
-                            <img src="images/team-2.jpg" alt="">
+                            <img src="image2/branch2.jpg" alt="">
                         </div>
                         <div class="team-hover text-center">
-                            <h5 class="t_title">Jhon Peo</h5>
+                            <h5 class="t_title">東北流通センター</h5>
                             <span class="t_sub_title">Web Expert</span>
                             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
                             <br />
-                            <div class="team-social-menu">
+                            <!--<div class="team-social-menu">
                                 <a href="#"><i class="icofont icofont-social-facebook"></i></a>
                                 <a href="#"><i class="icofont icofont-social-twitter"></i></a>
                                 <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
                                 <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3">
                     <div class="team-box two wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-image">
-                            <img src="images/team-6.png" alt="">
+                            <img src="image2/branch3.jpg" alt="">
                         </div>
                         <div class="team-hover text-center">
-                            <h5 class="t_title">Dabid Beli</h5>
+                            <h5 class="t_title">北関東流通センター</h5>
                             <span class="t_sub_title">Desing Expert</span>
                             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
                             <br />
-                            <div class="team-social-menu">
+                            <!--<div class="team-social-menu">
                                 <a href="#"><i class="icofont icofont-social-facebook"></i></a>
                                 <a href="#"><i class="icofont icofont-social-twitter"></i></a>
                                 <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
                                 <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3">
                     <div class="team-box two wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-image">
-                            <img src="images/team-4.jpg" alt="">
+                            <img src="image2/branch4.jpg" alt="">
                         </div>
                         <div class="team-hover text-center">
-                            <h5 class="t_title">Jhon Doe</h5>
+                            <h5 class="t_title">西日本流通センター</h5>
                             <span class="t_sub_title">Java Expert</span>
                             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
                             <br />
-                            <div class="team-social-menu">
+                            <!--<div class="team-social-menu">
                                 <a href="#"><i class="icofont icofont-social-facebook"></i></a>
                                 <a href="#"><i class="icofont icofont-social-twitter"></i></a>
                                 <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
                                 <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -719,67 +606,14 @@
 
 
 
-    <section class="section-padding gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <div class="page-title text-center">
-                        <h2 class="title">What Our Client Say</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="testimonials">
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
-                            </div>
-                            <h3>Samirao Boekeo</h3>
-                            <h6>CEO, Classic Group</h6>
-                            <div class="testimonial-img">
-                                <img src="images/testimonial-1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
-                            </div>
-                            <h3>Samirao Boekeo</h3>
-                            <h6>CEO, Classic Group</h6>
-                            <div class="testimonial-img">
-                                <img src="images/testimonial-2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
-                            </div>
-                            <h3>Samirao Boekeo</h3>
-                            <h6>CEO, Classic Group</h6>
-                            <div class="testimonial-img">
-                                <img src="images/testimonial-1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
     <!-- Blog-area -->
     <section class="section-padding" id="blog-area">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="page-title text-center">
-                        <h2 class="title">Latest Blog</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h2 class="title">お知らせ</h2>
+                        <p>皆様へのお知らせや話題とお伝えしています</p>
                     </div>
                 </div>
             </div>
@@ -787,11 +621,11 @@
                 <div class="col-xs-12 col-md-6 wow fadeInUp">
                     <div class="blog-box">
                         <div class="blog-image">
-                            <img src="images/blog-md-2.jpg" alt="">
+                            <img src="image2/news1.jpg" alt="" class="retina">
                         </div>
                         <div class="blog-details">
-                            <h4><a href="#">Business Consultance Meetup, 10 Jan, 2016</a></h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                            <h4><a href="#">明日の流通を支える会社に, 10 June, 2019</a></h4>
+                            <p>創業15年以来、運ぶ・預かるのお仕事を基本として、信頼の流通カンパニーとして頑張ってまりました。東京オリンピックを前に、AI技術を活用るなどさらなる進化を図ってまいります。</p>
                         </div>
                     </div>
                 </div>
@@ -799,27 +633,27 @@
                     <div class="blog-lists">
                         <div class="blog-list wow fadeInUp" data-wow-delay="0.2s">
                             <div class="blog-list-image">
-                                <img src="images/blog-th-1.jpg" alt="">
+                                <img src="image2/news2.jpg" alt="ai電動フォークリフト" class="retina">
                             </div>
-                            <h5><a href="#">On Graphics Design Post</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2016</div>
-                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                            <h5><a href="#">AI電動フォークリフトを導入しました</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2019</div>
+                            <p>本社流通センターと東北流通センターにてAU電動フォークリフトを導入しました</p>
                         </div>
                         <div class="blog-list wow fadeInUp" data-wow-delay="0.4s">
                             <div class="blog-list-image">
-                                <img src="images/blog-th-2.jpg" alt="">
+                                <img src="image2/news3.jpg" alt="北陸エリア流通センター" class="retina">
                             </div>
-                            <h5><a href="#">On Graphics Design Post</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2016</div>
-                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                            <h5><a href="#">北陸エリア（富山）に流通センターを開設しました</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2019</div>
+                            <p>北陸エリア（富山市）に流通センターを開設しました</p>
                         </div>
                         <div class="blog-list wow fadeInUp" data-wow-delay="0.6s">
                             <div class="blog-list-image">
-                                <img src="images/blog-th-3.jpg" alt="">
+                                <img src="image2/news4.jpg" alt="自家用車流通" class="retina">
                             </div>
-                            <h5><a href="#">On Graphics Design Post</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2016</div>
-                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                            <h5><a href="#">自家用車流通サービスを西日本エリアで開始しました</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 16 JUNE 2019</div>
+                            <p>自家用車流通サービスを東日本エリアに加え西日本エリアでも開始しました</p>
                         </div>
                     </div>
                 </div>
@@ -886,7 +720,35 @@
         </div>
     </section>
     <!-- Contact-Area / -->
-    <div id="maps"></div>
+    <!--<div id="maps">
+  
+  </div>-->
+  <section id="access" class="section_padding">
+  <div class="container">
+    <h2 class="kosou_midashi text-center">交通のご案内</h2>
+  <div class="row">  
+  <div class="col-sm-6">
+    <table class="table">
+  <tbody>
+    <tr>
+      <td>住所</td>
+      <td>埼玉県浦和市常盤1-2-3</td>
+    </tr>
+    <tr>
+      <td>車のご利用</td>
+      <td>首都高速大宮線浦和北出口より車で約3分</td>
+    </tr>
+    <tr>
+      <td>電車のご利用</td>
+      <td>JR京浜東北線浦和駅より徒歩約5分</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm-6"><div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12931.901070986441!2d139.64199152781816!3d35.874122942135024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c034b11a9cb9%3A0xfb8140f8804e1a86!2z5Z-8546J55yM44GV44GE44Gf44G-5biC5rWm5ZKM5Yy6!5e0!3m2!1sja!2sjp!4v1560495712163!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+  </div>
+  </div>
+  </section>
     <!-- Footer-Area -->
     <footer class="footer-area">
         <div class="footer-top section-padding">

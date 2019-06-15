@@ -345,7 +345,7 @@ a.scrolldown {
 }
 
 .site2 .header-area {
-    background-image: url('images/header-bg-2.jpg');
+  background-image: url(image2/hero2.jpg);
 }
 
 .header-area .header-text .header-title {
@@ -1349,10 +1349,10 @@ a.scrolldown {
 /*-- 23. Contact-Area --*/
 
 .contact-area {
-    position: relative;
-    z-index: 1;
-    padding: 100px 0;
-    margin-bottom: -250px;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+  /* [disabled]margin-bottom: -250px; */
 }
 
 .contact-area:before {
