@@ -23,10 +23,15 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/index_customize.css" rel="stylesheet" type="text/css">
     
+    <!--スムース-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
     
     <!--上に戻るボタン↓-->
     <link href="css/page_to_top_base1.css" rel="stylesheet" type="text/css">
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
@@ -45,6 +50,25 @@ $(document).ready(function() {
 });
 </script>
    <!--上に戻るボタン↑--> 
+    <!--スムース-->
+    <!--<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>-->
 </head>
   <p class="pagetop"><a href="#wrap">▲</a></p>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -65,7 +89,7 @@ $(document).ready(function() {
 	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>スケジュール</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>施設案内</span></a></li>
 	          <li class="nav-item"><a href="#coaches-section" class="nav-link"><span>コーチ</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>お知らせ</span></a></li>
+	          <li class="nav-item"><a href="#info-section" class="nav-link"><span>お知らせ</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>お問合せ</span></a></li>
 	        </ul>
 	      </div>
@@ -83,8 +107,8 @@ $(document).ready(function() {
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Welcome to the Club</span>
-			            <h1 class="mb-4 mt-3">Get A <span>Perfect</span> Body <span>Figure</span></h1>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+			            <h1 class="mb-4 mt-3"><span>パーフェクトなボディを手にする第一歩</span></h1>
+			            <p>誰もが持っている健康的な体。そのポテンシャルをエクササイズで刺激してナイスなボディを創っていきます。</p>
 			            
 			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">私達と一緒にやりましょう</a></p>
 		            </div>
@@ -103,8 +127,8 @@ $(document).ready(function() {
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Welcome to Club</span>
-			            <h1 class="mb-4 mt-3">Pain is <span>Temporary</span> But Glory is <span>Forever</span></h1>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+			            <h1 class="mb-4 mt-3"><span>楽しさと健康を作ることがモットーです</span></h1>
+			            <p>楽しく健康で笑顔のたえない、そんなクラブでありたいと考えています。</p>
 			            
 			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">私達と一緒にやりましょう</a></p>
 		            </div>
@@ -122,8 +146,8 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-body"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">お試し体験入会</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <h3 class="heading mb-3">様々なメニューをご用意</h3>
+                <p>豊富なメニューやプログラムで皆様のご要望にお応えしています。</p>
                 <!-- <p><a href="#" class="btn btn-primary">Read more</a></p> -->
               </div>
             </div>      
@@ -133,7 +157,7 @@ $(document).ready(function() {
               <div class="icon"><span class="flaticon-diet"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">割安入会キャンペーン</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>だだいま、割安入会キャンペーンを実施しています。通常の30％OFFにてご入会いただけるチャンスです。</p>
                 <!-- <p><a href="#" class="btn btn-primary">Read more</a></p> -->
               </div>
             </div>    
@@ -143,7 +167,7 @@ $(document).ready(function() {
               <div class="icon"><span class="flaticon-running"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">各種無料レクチャー</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>当クラブでは随時会員様に役立つ様々な勉強会や講習会を開催しています。</p>
                 <!-- <p><a href="#" class="btn btn-primary">Read more</a></p> -->
               </div>
             </div>      
@@ -159,7 +183,7 @@ $(document).ready(function() {
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-gym"></span> フィットネスプログラム</a>
 
-              <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-body"></span> フィット &amp; 健康</a>
+              <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-body"></span> フィットネスと健康</a>
 
               <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-woman"></span> 筋力トレーニング</a>
 
@@ -180,65 +204,65 @@ $(document).ready(function() {
 
               <div class="tab-pane fade show active py-0" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
                 <span class="icon mb-3 d-block flaticon-gym"></span>
-                <h2 class="mb-4">Fitness Program</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">フィットネスプログラム</h2>
+                <p>こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。</p>
+                <p>こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。こちらにはフィットネスプログラムについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
                 <span class="icon mb-3 d-block flaticon-body"></span>
-                <h2 class="mb-4">Fit &amp; Healthy</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">フィットネスと健康</h2>
+                <p>こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。</p>
+                <p>こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。こちらにはフィットネスと健康についての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
                 <span class="icon mb-3 d-block flaticon-woman"></span>
-                <h2 class="mb-4">Muscle Building</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">筋力トレーニング</h2>
+                <p>こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。</p>
+                <p>こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。こちらには筋力トレーニングについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
                 <span class="icon mb-3 d-block flaticon-abs"></span>
-                <h2 class="mb-4">Bikini &amp; Body</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">フィットネスビキニ</h2>
+                <p>こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。</p>
+                <p>こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。こちらにはフィットネスビキニについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
                 <span class="icon mb-3 d-block flaticon-running"></span>
-                <h2 class="mb-4">Cardio Exercise</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">カーディオ・エクササイズ</h2>
+                <p>こちらにはカーディオ・エクササイズについての文字原稿が入ります。こちらにはカーディオ・エクササイズについての文字原稿が入ります。こちらにはカーディオ・エクササイズについての文字原稿が入ります。</p>
+                <p>こちらにはカーディオ・エクササイズについての文字原稿が入ります。こちらにはカーディオ・エクササイズについての文字原稿が入ります。こちらにはカーディオ・エクササイズについての文字原稿が入ります。こちらにはカーディオ・エクササイズについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
                 <span class="icon mb-3 d-block flaticon-meditation"></span>
-                <h2 class="mb-4">Power Yoga</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">ヨガ教室</h2>
+                <p>こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。</p>
+                <p>こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。こちらにはヨガ教室についての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
                 <span class="icon mb-3 d-block flaticon-aerobic"></span>
-                <h2 class="mb-4">Aerobics Program</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">エアロビクスプログラム</h2>
+                <p>こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。</p>
+                <p>こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。こちらにはエアロビクスプログラムについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
 
               <div class="tab-pane fade py-0" id="v-pills-08" role="tabpanel" aria-labelledby="v-pills-08-tab">
                 <span class="icon mb-3 d-block flaticon-gym"></span>
-                <h2 class="mb-4">Crossfit Program</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <h2 class="mb-4">クロスフィトプログラム</h2>
+                <p>こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。</p>
+                <p>こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。こちらにはクロスフィトプログラムについての文字原稿が入ります。</p>
                 <!--<p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>-->
               </div>
             </div>
@@ -251,9 +275,9 @@ $(document).ready(function() {
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Sexy &amp; Healthy</span>
-            <h2 class="mb-4">Get a Perfect Body</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          	<span class="subheading">Body Style &amp; Healthy</span>
+            <h2 class="mb-4">パーフェクトボディと健康を手に入れましょう</h2>
+            <p>様々なプログラムやエクササイズで健康な体とスタイリシュな体を手に入れてください</p>
           </div>
         </div>
         <div class="row">
@@ -261,7 +285,7 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-abs"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Make Your Body Harmonic</h3>
+                <h3 class="heading mb-3">カラダを作る Program</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>      
@@ -270,7 +294,7 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-scale"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Weight Loss Program</h3>
+                <h3 class="heading mb-3">体重調整・管理 Program</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>      
@@ -279,7 +303,7 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-check-list"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Group Personal Trainings</h3>
+                <h3 class="heading mb-3">トレーニング　Program</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>      
@@ -288,7 +312,7 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-diet"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Optimal Diet Selection</h3>
+                <h3 class="heading mb-3">最適な食事 Program</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>      
@@ -297,7 +321,7 @@ $(document).ready(function() {
             <div class="media block-6 services text-center d-block">
               <div class="icon"><span class="flaticon-treadmill-machine-with-timer"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Individual Training Programs</h3>
+                <h3 class="heading mb-3">個別トレーニング Programs</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>      
@@ -312,8 +336,8 @@ $(document).ready(function() {
         <div class="row justify-content-center pb-5">
 	        <div class="col-md-12 heading-section text-center ftco-animate">
 	        	<span class="subheading">Schedule</span>
-	          <h2 class="mb-4">Training Schedule</h2>
-	          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+	          <h2 class="mb-4">トレーニングスケジュール</h2>
+	          <p>1週間分の基本スケジュールをご案内しています</p>
 	        </div>
 	      </div>
 	      <div class="ftco-schedule">
@@ -672,8 +696,8 @@ $(document).ready(function() {
     		<div class="row justify-content-center pb-5">
           <div class="col-md-6 heading-section text-center ftco-animate">
           	<span class="subheading">Coaches</span>
-            <h2 class="mb-4">Our Coaches</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h2 class="mb-4">当クラブのコーチ陣</h2>
+            <p>当クラブの優秀なコーチをご紹介しています</p>
           </div>
         </div>
         <div class="row">
@@ -686,14 +710,14 @@ $(document).ready(function() {
 								<div>
 									<h3 class="mb-2">山口美江</h3>
 									<span class="position mb-4">Owner/Head Coach</span>
-									<div class="faded">
+									<!--<div class="faded">
 										<ul class="ftco-social text-center">
 			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
 			              </ul>
-		              </div>
+		              </div>-->
 		            </div>
 							</div>
 						</div>
@@ -707,14 +731,14 @@ $(document).ready(function() {
 								<div>
 									<h3 class="mb-2">田村さき</h3>
 									<span class="position mb-4">Coach</span>
-									<div class="faded">
+									<!--<div class="faded">
 										<ul class="ftco-social text-center">
 			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
 			              </ul>
-		              </div>
+		              </div>-->
 		            </div>
 							</div>
 						</div>
@@ -728,14 +752,14 @@ $(document).ready(function() {
 								<div>
 									<h3 class="mb-2">安藤美雪</h3>
 									<span class="position mb-4">Coach</span>
-									<div class="faded">
+									<!--<div class="faded">
 										<ul class="ftco-social text-center">
 			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
 			              </ul>
-		              </div>
+		              </div>-->
 		            </div>
 							</div>
 						</div>
@@ -749,14 +773,14 @@ $(document).ready(function() {
 								<div>
 									<h3 class="mb-2">石田千沙都</h3>
 									<span class="position mb-4">Coach</span>
-									<div class="faded">
+									<!--<div class="faded">
 										<ul class="ftco-social text-center">
 			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
 			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
 			              </ul>
-		              </div>
+		              </div>-->
 		            </div>
 							</div>
 						</div>
@@ -765,7 +789,7 @@ $(document).ready(function() {
     	</div>
     </section>
 
-    <section class="ftco-section bg-light" id="blog-section">
+    <section class="ftco-section bg-light" id="info-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -898,7 +922,7 @@ $(document).ready(function() {
 		          		</div>
 		          		<div>
 			          		<h3 class="mb-3">Address</h3>
-				            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+				            <p>さいたま市浦和区常盤1-2-3　トキワビル2F</p>
 			            </div>
 			          </div>
 		          </div>
@@ -909,7 +933,7 @@ $(document).ready(function() {
 		          		</div>
 		          		<div>
 			          		<h3 class="mb-3">Contact Number</h3>
-				            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+				            <p><a href="tel://1234567920">048 123 4567</a></p>
 			            </div>
 			          </div>
 		          </div>
@@ -941,42 +965,73 @@ $(document).ready(function() {
       </div>
     </section>
 		
-		<section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div id="map" class="bg-white"></div>
-		</section>
+    <section id="access" class="section_padding">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Access</span>
+            <h2 class="mb-4">交通のご案内</h2>
+            <p>当施設までの交通をご案内しています</p>
+          </div>
+        </div>
+  <div class="row">  
+  <div class="col-sm-6">
+    <table class="table">
+  <tbody>
+    <tr>
+      <td>住所</td>
+      <td>埼玉県浦和市常盤1-2-3</td>
+    </tr>
+    <tr>
+      <td>車のご利用</td>
+      <td>首都高速大宮線浦和北出口より車で約3分</td>
+    </tr>
+    <tr>
+      <td>電車のご利用</td>
+      <td>JR京浜東北線浦和駅より徒歩約5分</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm-6"><div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12931.901070986441!2d139.64199152781816!3d35.874122942135024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c034b11a9cb9%3A0xfb8140f8804e1a86!2z5Z-8546J55yM44GV44GE44Gf44G-5biC5rWm5ZKM5Yy6!5e0!3m2!1sja!2sjp!4v1560495712163!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+  </div>
+  </div>
+  </section>
+    
+		
 
 		<section class="ftco-gallery ftco-section">
     	<div class="container-fluid px-4">
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h3 class="subheading">Gallery</h3>
-            <h2 class="mb-1">See the latest photos</h2>
+            <h3 class="subheading">Photo Gallery</h3>
+            <h2 class="mb-1">様々な写真をご紹介しています</h2>
           </div>
         </div>
     		<div class="row">
 					<div class="col-md-3 ftco-animate">
-						<a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
+						<a href="images/ph1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ph1.jpg);" title="タイトル">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/gallery-2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-2.jpg);">
+						<a href="images/ph2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ph2.jpg);" title="タイトル">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/gallery-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-3.jpg);">
+						<a href="images/ph3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ph3.jpg);" title="タイトル">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
+						<a href="images/ph4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ph4.jpg);" title="タイトル">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
@@ -1004,11 +1059,13 @@ $(document).ready(function() {
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cocahes</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Schedule</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                <li><a href="#programs-section"><span class="icon-long-arrow-right mr-2"></span>プログラム</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>サービス</a></li>
+                <li><a href="#schedule-section"><span class="icon-long-arrow-right mr-2"></span>スケジュール</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>施設案内</a></li>
+                <li><a href="#coaches-section"><span class="icon-long-arrow-right mr-2"></span>コーチ</a></li>
+                <li><a href="#info-section"><span class="icon-long-arrow-right mr-2"></span>お知らせ</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>お問合せ</a></li>
               </ul>
             </div>
           </div>
