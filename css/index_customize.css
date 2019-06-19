@@ -657,6 +657,11 @@ vertical-align:bottom;
   background-image: url(../riyou_kiyaku/images/kiyaku_top.jpg);
 }
 
+.new_inyou_red {
+  padding-left: 5px;
+  border-left: 5px solid hsla(359,100%,50%,1.00);
+}
+
 
 
 @media (max-width:320px){
