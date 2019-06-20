@@ -662,6 +662,13 @@ vertical-align:bottom;
   border-left: 5px solid hsla(359,100%,50%,1.00);
 }
 
+.jumbotron.niko_order {
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../order/images/order_top1.jpg);
+}
+
 
 
 @media (max-width:320px){
