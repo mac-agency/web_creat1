@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$open".
-        on line 20 of /Users/yamano_masashi/site/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss
+        on line 20 of /Users/yamano/Sites/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss
 
 15: 				align-self: center;
 16: 			}
@@ -15,7 +15,7 @@ Error: Undefined variable: "$open".
 25: 				color: #fff;
 
 Backtrace:
-/Users/yamano_masashi/site/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss:20
+/Users/yamano/Sites/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss:20
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$open\".\A         on line 20 of /Users/yamano_masashi/site/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss\A \A 15: 				align-self: center;\A 16: 			}\A 17: 			h2{\A 18: 				font-size: 60px;\A 19: 				font-weight: bold;\A 20: 				font-family: $open;\A 21: 				margin-bottom: 15px;\A 22: 				margin-top: -30px;\A 23: 			}\A 24: 			p{\A 25: 				color: #fff;"; }
+  content: "Error: Undefined variable: \"$open\".\A         on line 20 of /Users/yamano/Sites/web_creat1/nikoniko_design/single_multi_bulkapp/scss/breadcrumb.scss\A \A 15: 				align-self: center;\A 16: 			}\A 17: 			h2{\A 18: 				font-size: 60px;\A 19: 				font-weight: bold;\A 20: 				font-family: $open;\A 21: 				margin-bottom: 15px;\A 22: 				margin-top: -30px;\A 23: 			}\A 24: 			p{\A 25: 				color: #fff;"; }
